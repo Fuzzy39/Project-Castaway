@@ -1,3 +1,7 @@
-v-0:January 20, 2020
- features: nothing.
- yep.
+Initial:January 20, 2020
+ - a blank slate.
+     infinite posibilities.
+     
+Milestone 0: January 21, 2020
+ - White text on a sea toned background.
+    We came from the sea. It seems fiting that we return.
