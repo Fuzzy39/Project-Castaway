@@ -1,0 +1,56 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Project Castaway</title></head>
+<body> <script src="pixi.min.js"></script>
+<script type="text/javascript">	
+// Dylan, If you want to know what this means, ignore everything above. 
+	
+	// for utility:
+	
+	
+	// center something smack dab in the screen.
+	function center ( sprite )
+	{sprite.position.set((app.renderer.width-sprite.width)/2,(app.renderer.height-sprite.height)/2);}
+	
+	
+	
+	// fonts:
+	const Normal = new PIXI.TextStyle
+	({
+
+		fontFamily: 'Arial',
+		fontSize: 40,
+		fontWeight: 'bold',
+		fill: 'White',
+
+
+	});	
+	
+	
+	let app = new PIXI.Application
+	({  
+		width: 800, 
+		height: 450,                       
+		antialiasing: true, 
+		transparent: false, 
+		resolution: 1
+  	}); 
+	
+	
+	//Add the canvas that Pixi automatically created for you to the HTML document
+	document.body.appendChild( app.view );
+	
+	// make the canvas fill the window (?)
+	app.renderer.view.style.position = "absolute"
+	app.renderer.view.style.width = window.innerWidth + "px";
+	app.renderer.view.style.height = window.innerHeight + "px";
+	app.renderer.view.style.display = "block";
+	// set the background.
+	app.renderer.backgroundColor = 0x00f0d0;
+	
+	
+	// the version number!
+	versionWatermark = new PIXI.Text( 'Project Castaway | Milestone 0', Normal );
+	center(versionWatermark);
+	app.stage.addChild( versionWatermark );
+	  
+</script></body></html>
